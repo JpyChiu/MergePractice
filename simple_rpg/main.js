@@ -15,7 +15,7 @@ $(document).ready(function(){
     
     //玩家
     imgMain = new Image();
-    imgMain.src = "SimpleRPG/images/spriteSheet.png";
+    imgMain.src = "simple_rpg/images/spriteSheet.png";
     currentImgMainX=0;
     currentImgMainY=0;
     imgMain.onload=function(){
@@ -24,10 +24,10 @@ $(document).ready(function(){
     
     //障礙物and敵人
     imgMountain = new Image();
-    imgMountain.src = "SimpleRPG/images/material.png";
+    imgMountain.src = "simple_rpg/images/material.png";
     
     imgEnemy = new Image();
-    imgEnemy.src = "SimpleRPG/images/Enemy.png";
+    imgEnemy.src = "simple_rpg/images/Enemy.png";
     
     imgMountain.onload=function(){  //onload會等到圖片仔入完成後才執行
         imgEnemy.onload=function(){

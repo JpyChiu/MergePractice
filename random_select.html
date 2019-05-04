@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="ClubCourse/style.css">
+    <link rel="stylesheet" href="random_selector/style.css">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -29,20 +29,20 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="RandomSelect.html">RandomSelect</a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">ClubCourse <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">RandomSelect <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="MindQuiz.html">MindQuiz</a>
+              <a class="nav-link" href="club_course.html">ClubCourse</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="SimpleRPG.html">SimpleRPG</a>
+              <a class="nav-link" href="mind_quiz.html">MindQuiz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="YoutubePlayer.html">YoutubePlayer </a>
+              <a class="nav-link" href="simple_rpg.html">SimpleRPG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="youtube_player.html">YoutubePlayer </a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
@@ -59,14 +59,14 @@
     <main role="main">
       <div class="container_marketing">
         <hr class="featurette-divider">
-            <h1>社團課程時間表</h1>
-            <table id="courseTable"></table>
-            <br>
-            輸入開始日期: <input type="date" id="input_date">
-            <button id="submit_date" type="button">確認</button>
-            <br><br>
-            輸入下個活動: <input type="text" id="input_event">
-            <button id="submit_event" type="button">送出</button>
+            <h1 id="food_name">?</h1>
+            <button id="choose_food">今天晚上吃什麼?</button>
+            <ul id="choices">
+                <li>拉麵</li>
+                <li>滷肉飯</li>
+                <li>水餃</li>
+            </ul>
+            <img id="food_img" src="" alt="choose food">
         <hr class="featurette-divider">
       </div><!-- /.container -->
       <!-- FOOTER -->
@@ -85,7 +85,6 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="ClubCourse/topic.js"></script>
-    <script src="ClubCourse/main.js"></script>
+    <script src="random_selector/main.js"></script>
   </body>
 </html>

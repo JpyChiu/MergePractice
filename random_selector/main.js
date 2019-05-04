@@ -7,13 +7,13 @@ $(document).ready(function() {
         switch(random_list_number)
             {
                 case 0:
-                    $("#food_img").attr("src", "RandomSelector/image/img1.jpg");
+                    $("#food_img").attr("src", "random_selector/image/img1.jpg");
                     break;
                 case 1:
-                    $("#food_img").attr("src", "RandomSelector/image/img2.webp");
+                    $("#food_img").attr("src", "random_selector/image/img2.webp");
                     break;
                 case 2:
-                    $("#food_img").attr("src", "RandomSelector/image/img3.jpg");
+                    $("#food_img").attr("src", "random_selector/image/img3.jpg");
                     break;
             }
     });
