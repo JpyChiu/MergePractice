@@ -1,16 +1,19 @@
 $(document).ready(function(){
    var currentQuiz=null;//目前題數
-    $("#starButton").click(function()
+    $("#startButton").click(function()
     {
         if(currentQuiz==null)
         {
             currentQuiz=0;
             $("#question").text(questions[0].question);
             $("#options").empty();//clear answer text
-            for(var x=0; x<questions[0].answers.length; x++)
-            {
-                $("#options").append("<input name='options' type='radio' value=" +x+ ">" + "<label>" + questions[0].answers[x][0] + "</label><br><br>");
-            }
+            $("#options").append("<input type='radio' id='demo-priority-low' name='demo-priority' value=0>" + "<label for='demo-priority-low'>" + questions[0].answers[0][0] + "</label><br><br>");
+            $("#options").append("<input type='radio' id='demo-priority-normal' name='demo-priority' value=1>" + "<label for='demo-priority-normal'>" + questions[0].answers[1][0] + "</label><br><br>");
+            $("#options").append("<input type='radio' id='demo-priority-high' name='demo-priority' value=2>" + "<label for='demo-priority-high'>" + questions[0].answers[2][0] + "</label><br><br>");
+            // for(var x=0; x<questions[0].answers.length; x++)
+            // {
+            //     $("#options").append("<input type='radio' id='demo-priority-normal' name='demo-priority' value=" +x+ ">" + "<label for='demo-priority-low'>" + questions[0].answers[x][0] + "</label><br><br>");
+            // }
             $("#startButton").attr("value", "Next");
         }
         else
@@ -33,10 +36,14 @@ $(document).ready(function(){
                         currentQuiz=questions[currentQuiz].answers[i][1]-1;
                         $("#question").text(questions[currentQuiz].question);
                         $("#options").empty();//清空選項
-                        for(var x=0; x<questions[currentQuiz].answers.length; x++)
-                        {
-                            $("#options").append("<input name='options' type='radio' value=" +x+ ">" + "<label>" + questions[currentQuiz].answers[x][0] + "</label><br><br>");//next question text
-                        }
+                        $("#options").append("<input name='demo-priority' id='demo-priority-low' type='radio' value=0>" + "<label for='demo-priority-low'>" + questions[currentQuiz].answers[0][0] + "</label><br><br>");//next question text
+                        $("#options").append("<input name='demo-priority' id='demo-priority-normal' type='radio' value=1>" + "<label for='demo-priority-normal'>" + questions[currentQuiz].answers[1][0] + "</label><br><br>");//next question text
+                        $("#options").append("<input name='demo-priority' id='demo-priority-high' type='radio' value=2>" + "<label for='demo-priority-high'>" + questions[currentQuiz].answers[2][0] + "</label><br><br>");//next question text
+                        
+                        // for(var x=0; x<questions[currentQuiz].answers.length; x++)
+                        // {
+                        //     $("#options").append("<input name='options' type='radio' value=" +x+ ">" + "<label>" + questions[currentQuiz].answers[x][0] + "</label><br><br>");//next question text
+                        // }
                     }
                     return false;
                 }
