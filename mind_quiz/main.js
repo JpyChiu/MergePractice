@@ -1,6 +1,6 @@
 $(document).ready(function(){
    var currentQuiz=null;//目前題數
-    $("#starButton").click(function()
+    $("#startButton").click(function()
     {
         if(currentQuiz==null)
         {
