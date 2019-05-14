@@ -24,8 +24,10 @@ function onYouTubeIframeAPIReady(){
 }
 //當Youtube播放器準備好時
 function onPlayerReady(event){
+    $("#vedio_name").text(player.getVideoData().title);
+    $("#vedio_name").css("display", "block")
     $("#playButton").click(function(){
-        $("#vedio_name").text(player.getVideoData().title);
+        // $("#vedio_name").text(player.getVideoData().title);
         player.playVideo();
     });
 }
