@@ -26,38 +26,42 @@
 								<header id="header">
 									<a href="index.html" class="logo" style="font-size: 30px;">Home Page</a>
 									<ul class="icons">
-                    <li><a href="https://twitter.com/joy4707710" class="icon fa-twitter">
-                      <span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.facebook.com/joy.chiu.9404" class="icon fa-facebook">
-                      <span class="label">Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/joyeeeee__030/" class="icon fa-instagram">
-                      <span class="label">Instagram</span></a></li>
-                    <li><a href="https://github.com/JpyChiu" class="icon fa-github">
-                      <span class="label">Github</span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCn-TZegbv0e5t3RajwKM7bw" class="icon fa-youtube">
-                      <span class="label">Youtube</span></a></li>
+									<li><a href="https://twitter.com/joy4707710" class="icon fa-twitter">
+									<span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/joy.chiu.9404" class="icon fa-facebook">
+									<span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/joyeeeee__030/" class="icon fa-instagram">
+									<span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/JpyChiu" class="icon fa-github">
+									<span class="label">Github</span></a></li>
+									<li><a href="https://www.youtube.com/channel/UCn-TZegbv0e5t3RajwKM7bw" class="icon fa-youtube">
+									<span class="label">Youtube</span></a></li>
 									</ul>
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-                    <center>
-                    <h1>Club Course</h1>
-                    </center>
+										<h1>Club Course</h1>
 									</header>
 
-                  <hr class="major" />
-                  <div class="main_body">
-                    <h1>社團課程時間表</h1>
-                    <table id="courseTable"></table>
-                    <br>
-                    輸入開始日期: <input type="date" id="input_date">
-                    <button id="submit_date" type="button">確認</button>
-                    <br><br>
-                    輸入下個活動: <input type="text" id="input_event"><br>
-                    <button id="submit_event" type="button">送出</button>
-                  </div>
+									<hr class="major" />
+									<div class="main_body">
+										<h1>社團課程時間表</h1>
+										<div class="table-wrapper">
+											<table id="courseTable"></table>
+										</div>
+										<br>
+										<div>
+											<label>輸入開始日期: </label><input type="date" id="input_date">
+											<button id="submit_date" type="button">確認</button>
+										</div>
+										<br><br>
+										<div>
+											<label>輸入下個活動: </label><input name="demo-name" type="text" id="demo-name" placeholder="Next Class" style="width: 200px;"><br>
+											<button id="submit_event" type="button">送出</button>
+										</div>
+									</div>
 									<hr class="major" />
 								</section>
 
@@ -81,19 +85,14 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-                    <li><a href="index.html">Home-page</a></li>
-                    <li><a href="random_select.html">Random-Select</a></li>
-                    <li><a href="club_course.html">Club-Course</a></li>
-                    <li><a href="mind_quiz.html">Mind-Quiz</a></li>
-                    <li><a href="simple_rpg.html">Simple-RPG</a></li>
-                    <li><a href="youtube_player.html">Youtube-Player</a></li>
-										<li>
-											<span class="opener">Submenu</span>
+										<li><a href="index.html">Home-page</a></li>
+										<li><span class="opener">Class Lab</span>
 											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
+												<li><a href="random_select.html">Random-Select</a></li>
+												<li><a href="club_course.html">Club-Course</a></li>
+												<li><a href="mind_quiz.html">Mind-Quiz</a></li>
+												<li><a href="simple_rpg.html">Simple-RPG</a></li>
+												<li><a href="youtube_player.html">Youtube-Player</a></li>
 											</ul>
 										</li>
 									</ul>
@@ -152,9 +151,9 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script src="page_lib/club_course/js/topic.js"></script>
-      <script src="page_lib/club_course/js/main.js"></script>
+		    <script src="assets/js/main.js"></script>
+		    <script src="page_lib/club_course/js/topic.js"></script>
+		    <script src="page_lib/club_course/js/main.js"></script>
 
 	</body>
 </html>
