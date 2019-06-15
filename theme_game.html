@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="page_lib/simple_rpg/css/style.css">
+    <link rel="stylesheet" href="theme_page_lib/game_2048/game_2048.css">
 	</head>
 	<body class="is-preload">
 
@@ -42,17 +42,13 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-                   						 <h1>Simple RPG</h1>
+                   						<h1>浪費你時間的小遊戲</h1>
 									</header>
 
 									<hr class="major" />
-									<div class="main_body">
-										<h1>我要去右下角</h1>
-										<div>
-											<canvas id="myCanvas" width="600" height="600"></canvas>
-											<p id="talkBox"></p>
-										</div>
-									</div>
+									<div id="container_2048">
+                                        <a id="start">按一下開始</a>
+                                    </div>
 									<hr class="major" />
 								</section>
 
@@ -146,7 +142,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="page_lib/simple_rpg/js/main.js"></script>
+            <script src="theme_page_lib/game_2048/game_2048.js"></script>
+            <script src="theme_page_lib/game_2048/game_begin_2048.js"></script>
 
 	</body>
 </html>
