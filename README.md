@@ -14,9 +14,8 @@ A website for class: 網站開發設計實務
 
 ## **TODO:**
 
-* [ ] Image Classification
-* [ ] Finnish HomePage
-* [ ] Some Game
+* [x] Finnish HomePage
+* [x] Some Game
 
 ## **Website**
 
