@@ -8,10 +8,10 @@
 	<head>
 		<title>JoyChiu Practice Web</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="page_lib/club_course/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="page_lib/mind_quiz/css/style.css">
 	</head>
 	<body class="is-preload">
 
@@ -26,41 +26,33 @@
 								<header id="header">
 									<a href="index.html" class="logo" style="font-size: 30px;">Back to Home Page</a>
 									<ul class="icons">
-									<li><a href="https://twitter.com/joy4707710" class="icon fa-twitter">
-									<span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/joy.chiu.9404" class="icon fa-facebook">
-									<span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/joyeeeee__030/" class="icon fa-instagram">
-									<span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/JpyChiu" class="icon fa-github">
-									<span class="label">Github</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UCn-TZegbv0e5t3RajwKM7bw" class="icon fa-youtube">
-									<span class="label">Youtube</span></a></li>
+										<li><a href="https://twitter.com/joy4707710" class="icon fa-twitter">
+										<span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/joy.chiu.9404" class="icon fa-facebook">
+										<span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/joyeeeee__030/" class="icon fa-instagram">
+										<span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/JpyChiu" class="icon fa-github">
+										<span class="label">Github</span></a></li>
+										<li><a href="https://www.youtube.com/channel/UCn-TZegbv0e5t3RajwKM7bw" class="icon fa-youtube">
+										<span class="label">Youtube</span></a></li>
 									</ul>
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Club Course</h1>
+										<h1>Mind Quiz</h1>
 									</header>
 
 									<hr class="major" />
 									<div class="main_body">
-										<h1>社團課程時間表</h1>
-										<div class="table-wrapper">
-											<table id="courseTable"></table>
-										</div>
-										<br>
+										<h1>2018, 你的愛情滋味是什麼滋味?</h1>
 										<div>
-											<label>輸入開始日期: </label><input type="date" id="input_date">
-											<button id="submit_date" type="button">確認</button>
+											<h2 id="question"></h2>
+											<div id="options"></div>
 										</div>
-										<br><br>
-										<div>
-											<label>輸入下個活動: </label><input name="demo-name" type="text" id="demo-name" placeholder="Next Class" style="width: 200px;"><br>
-											<button id="submit_event" type="button">送出</button>
-										</div>
+										<input id="startButton" type="button" value="開始作答">
 									</div>
 									<hr class="major" />
 								</section>
@@ -87,8 +79,8 @@
 									<ul>
 										<li><a href="index.html">Home-page</a></li>
 										<li><a href="theme_random_selector.html">Waste-select</a></li>
-										<li><a href="theme_club_course.html">Waste-Record</a></li>
-										<li><a href="theme_mind_quiz.html">Waste-Mind-Quiz</a></li>
+                                        <li><a href="theme_club_course.html">Waste-Record</a></li>
+                                        <li><a href="theme_mind_quiz.html">Waste-Mind-Quiz</a></li>
 										<li><span class="opener">Class Lab</span>
 											<ul>
 												<li><a href="random_select.html">Random-Select</a></li>
@@ -154,8 +146,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="page_lib/club_course/js/topic.js"></script>
-			<script src="page_lib/club_course/js/main.js"></script>
+			<script src="page_lib/mind_quiz/js/data.js"></script>
+			<script src="page_lib/mind_quiz/js/main.js"></script>
 
 	</body>
 </html>
