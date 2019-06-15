@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="page_lib/simple_rpg/css/style.css">
+    <link rel="stylesheet" href="page_lib/random_selector/css/style.css">
 	</head>
 	<body class="is-preload">
 
@@ -42,17 +42,20 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-                   						 <h1>Simple RPG</h1>
+										<h1>Random Select</h1>
 									</header>
 
-									<hr class="major" />
-									<div class="main_body">
-										<h1>我要去右下角</h1>
-										<div>
-											<canvas id="myCanvas" width="600" height="600"></canvas>
-											<p id="talkBox"></p>
-										</div>
-									</div>
+									<span class="image main"><img id="food_img" src="images/thonk.PNG" alt="choose food"/></span>
+                                    <hr class="major" />
+                                    <div class="main_body">
+                                                            <h1 id="food_name">請按鈕</h1>
+                                                            <button id="choose_food">今天晚上吃什麼?</button>
+                                                            <ul id="choices">
+                                                                <li>拉麵</li>
+                                                                <li>滷肉飯</li>
+                                                                <li>水餃</li>
+                                        </ul>
+                                    </div>
 									<hr class="major" />
 								</section>
 
@@ -76,8 +79,8 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Home-page</a></li>
-										<li><a href="theme_random_selector.html">Waste select</a></li>
+                                        <li><a href="index.html">Home-page</a></li>
+                                        <li><a href="theme_random_selector.html">Waste select</a></li>
 										<li><span class="opener">Class Lab</span>
 											<ul>
 												<li><a href="random_select.html">Random-Select</a></li>
@@ -142,8 +145,8 @@
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="page_lib/simple_rpg/js/main.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="page_lib/random_selector/js/main.js"></script>
 
 	</body>
 </html>
