@@ -1,10 +1,10 @@
 $(document).ready(function(){
-   var currentQuiz=null; // 目前題數
+   var currentQuiz = null; // 目前題數
     $("#startButton").click(function()
     {
-        if(currentQuiz==null) // 第一次答題
+        if(currentQuiz == null) // 第一次答題
         {
-            currentQuiz=0;
+            currentQuiz = 0;
             $("#question").text(questions[0].question);
             $("#options").empty(); //clear answer text
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
                         $("#question").text(finalAnswers[finalResult][0]); // 顯示最終結果標題
                         $("#options").empty();
                         $("#options").append(finalAnswers[finalResult][1]+"<br><br>");
-                        currentQuiz=null; // final answer render
+                        currentQuiz = null; // final answer render
                         $("#startButton").attr("value", "重新開始");
                     }
                     else
@@ -54,8 +54,8 @@ $(document).ready(function(){
                                             <br><br>"); // next question text
                         // Radio-3
                         $("#options").append("<input name='demo-priority' id='demo-priority-high' type='radio' value=2>"
-                        + "<label for='demo-priority-high'>" + questions[currentQuiz].answers[2][0] + "</label> \
-                        <br><br>"); // next question text
+                                             + "<label for='demo-priority-high'>" + questions[currentQuiz].answers[2][0] + "</label> \
+                                            <br><br>"); // next question text
                     }
                     return false;
                 }
