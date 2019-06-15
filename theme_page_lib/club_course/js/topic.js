@@ -7,6 +7,15 @@ var topic = [
     "玩遊戲放棄作業揮霍人生"
 ];
 
+var money = [
+    "300",
+    "0",
+    "0",
+    "80",
+    "0",
+    "無價"
+]
+
 var startDate = new Date();
 
 function setMonthAndDay(startMonth, startDay)

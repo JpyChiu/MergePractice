@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $("#courseTable").append("<thead><tr><th>次數</th> \
+    $("#courseTable").append("<thead><tr><th>第幾次</th> \
                                          <th>時間</th> \
-                                         <th>項目</th></tr> \
+                                         <th>項目</th> \
+                                         <th>價格</th></tr> \
                               </thead><tbody>");
     
     var topicCount = topic.length;
@@ -15,11 +16,17 @@ $(document).ready(function(){
     {
         if(topic[x]=="省錢")
         {
-            $("#courseTable").append("<tr><td>" + (x + 1) + "</td><td>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td>" + (x + 1) + "</td> \
+                                          <td>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td> \
+                                          <td style='color: grey;'>" + topic[x] + "</td> \
+                                          <td>" + money[x] + "</td></tr>");
         }
         else
         {
-            $("#courseTable").append("<tr><td>" + (x + 1) + "</td><td>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold; color: black;'>" + topic[x] + "</td></tr>");
+            $("#courseTable").append("<tr><td>" + (x + 1) + "</td> \
+                                          <td>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td> \
+                                          <td style='font-weight: bold; color: black;'>" + topic[x] + "</td> \
+                                          <td>" + money[x] + "</td></tr>");
         }
     }
     $("#courseTable").append("</tbody>");
