@@ -26,7 +26,7 @@ $(document).ready(function(){
             $("#courseTable").append("<tr><td>" + (x + 1) + "</td> \
                                           <td>" + (new Date(startDate.getTime() + x*7*dayUnit)).toLocaleDateString().slice(5) + "</td> \
                                           <td style='font-weight: bold; color: black;'>" + topic[x] + "</td> \
-                                          <td>" + money[x] + "</td></tr>");
+                                          <td style='color: black; font-weight: bold;'>" + money[x] + "</td></tr>");
         }
     }
     $("#courseTable").append("</tbody>");
@@ -46,16 +46,24 @@ $(document).ready(function(){
     });
     
     $("#submit_event").click(function(){
-        var input_text = $("#demo-name").val();
+        var input_text = $("#input_item").val();
         topic.push(input_text);
         topicCount = topic.length;
+        var input_money = $("#input_money").val();
+        money.push(input_money);
         if(input_text=="省錢")
         {
-            $("#courseTable").append("<tr><td class='event'>" + (topicCount) + "</td><td class='time'>" + (new Date(startDate.getTime() + (topicCount-1)*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='color: grey;'>" + topic[topicCount-1] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (topicCount) + "</td> \
+                                          <td class='time'>" + (new Date(startDate.getTime() + (topicCount-1)*7*dayUnit)).toLocaleDateString().slice(5) + "</td> \
+                                          <td style='color: grey;'>" + topic[topicCount-1] + "</td> \
+                                          <td>" + money[topicCount-1] + "</tr>");
         }
         else
         {
-            $("#courseTable").append("<tr><td class='event'>" + (topicCount) + "</td><td class='time'>" + (new Date(startDate.getTime() + (topicCount-1)*7*dayUnit)).toLocaleDateString().slice(5) + "</td><td style='font-weight: bold;'>" + topic[topicCount-1] + "</td></tr>");
+            $("#courseTable").append("<tr><td class='event'>" + (topicCount) + "</td> \
+                                          <td class='time'>" + (new Date(startDate.getTime() + (topicCount-1)*7*dayUnit)).toLocaleDateString().slice(5) + "</td> \
+                                          <td style='color: black; font-weight: bold;'>" + topic[topicCount-1] + "</td> \
+                                          <td style='color: black; font-weight: bold;'>" + money[topicCount-1] + "</tr>");
         }
     });
 });
