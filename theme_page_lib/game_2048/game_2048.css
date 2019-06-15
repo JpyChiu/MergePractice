@@ -1,6 +1,11 @@
 @charset "utf-8";
 
-#main
+.game_body header
+{
+    text-align: center;
+}
+
+.game_body p
 {
     text-align: center;
 }
